@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background-color: black;
+      width: 100%;
+      
+    }
+    .navbar{
+            background-color: black;
+            
+          
+        }
+        .navbar ul{
+            overflow: auto;
+            text-align:left;
+           
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+           
+            
+        }
+        .navbar li a{
+           
+            margin-left: 1px;
+            padding: 3px 20px;
+            text-decoration: none;
+            color: darkgoldenrod;
+            font-size: 25px;
+            font-weight: bold;
+            
+            
+            
+        }
+        .navbar li a:hover{
+            color: red;
+            text-shadow: blueviolet 3px -3px;
+           
+        }
+        .navbar img{
+          
+         
+        }
+        
+        #photo{
+          width: 32%;
+          margin-bottom: 63px;
+          margin-right: 20px;
+        }
+       
+        
+     
+        
+           
+         
+           
+           
+       
+        #name{
+          font-size: 40px;
+          font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI',  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: darkgoldenrod;
+          text-align: center;
+          margin: 3px;
+          background-color: black;
+        }
+        #name h2{
+          color: coral;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        #name h1{
+          padding: 2px;
+          margin:25px;
+          margin-top: 145px;
+          font-family:cursive;
+        }
+        #name h1 b{
+          color: blueviolet;
+        }
+        #heading h4 {
+          font-size: 75px;
+          margin: 96px;
+          text-align: center;
+          
+          color: blueviolet;
+          text-shadow: red 2px -3px 20px; 
+        }
+        #heading p{
+          color:white;
+          font-size: 30px;
+          margin-top:0px;
+          margin-left: 56px;
+          float:left;
+          padding: 18px;
+          margin: 40px;
+          line-height: 48px;
+          letter-spacing: 5px;
+          text-shadow: red 4px -3px 5px;
+          
+         
+        }
+        #resume h1{
+          color: blueviolet;
+          font-size: 75px;
+          text-align: center;
+          text-shadow:red 2px -3px 20px;
+        }
+        
+          
+          
+      
+        }
+        #resume h2{
+          color:white;
+          font-size: 52px;
+          margin-left: 55px;
+          padding-top: 34px;
+         
+         
+          
+        }
+        #resume pre{
+          color: white;
+          font-size: 35px;
+          margin: 0px;
+          line-height: 44px;
+        }
+        #resume h2{
+          color:coral;
+          text-align: center;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-style: bold;
+          font-size: 50px;
+        }
+        #resume b{
+          color:coral;
+          margin-left: 0px;
+        }
+        #career h2{
+          color: goldenrod;
+          background-color: blueviolet;
+          width: 885px;
+          margin-left: 64px;
+          font-size: 45px;
+          font-style: bold;
+          padding-left: 26px;
+        }
+       #career p{
+         color: white;
+         font-size: 30px;
+          margin-top:0px;
+          margin-left: 56px;
+          
+          padding: 8px;
+          margin: 40px;
+          line-height: 48px;
+          letter-spacing: 5px;
+          text-shadow: red 4px -3px 5px;
+       }
+        #acedemic h2{
+         color: goldenrod;
+          background-color: blueviolet;
+          width: 885px;
+          margin-left: 64px;
+          font-size: 45px;
+          font-style: bold;
+          padding-left: 26px; 
+        }  
+        ul{
+          color: white;
+          font-size: 30px;
+          margin-top:0px;
+          margin-left: 56px;
+          
+          padding: 8px;
+          margin: 40px;
+          line-height: 48px;
+          letter-spacing: 5px;
+          text-shadow: red 4px -3px 5px;
+        }
+        ul li{
+          list-style-type: square;
+          
+        }
+       
+       
+        
+        #education h2{
+          color: goldenrod;
+          background-color: blueviolet;
+          width: 895px;
+          margin-left: 64px;
+          font-size: 45px;
+          font-weight: bold;
+          padding-left: 26px;
+        } 
+        pre{
+          color: white;
+          font-size: 30px;
+          margin-top:0px;
+          margin-left: 56px;
+          font-weight: bold;
+          padding: 8px;
+          margin: 40px;
+          line-height: 48px;
+          letter-spacing: 5px;
+          text-shadow: red 4px -3px 5px;
+        }
+        pre b{
+          color:coral;
+        }
+        h6{
+          color: darkgoldenrod;
+          font-size: 35px;
+          text-align: right;
+          padding-top: 56px;
+          
+        }
+        button{
+          margin:auto;
+          display: block;
+          margin-top: 80px;
+          border-radius: 50px;
+          color: blueviolet;
+          background-color: blueviolet;
+          
+        }
+        .container{
+          background-color: blueviolet;
+         text-decoration: none;
+         padding-top: 4px;
+         display:block;
+         margin:3vh;
+         color: coral;
+         font-weight: bold;
+         margin:2vw;
+         
+         font-size:46px;
+         position: relative;
+         padding: 3px;
+         background: linear-gradient(28deg, #03a9f4, #f441a5);
+         border-radius: 2.9em;
+         transition: all 0.4s ease;
+         }
+         .container:hover{
+           color: white;
+           text-shadow: black 10px -5px 13px
+         }
+        .container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+.container:hover::before {
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(1.2em);
+}
+
+.container:active::before {
+  filter: blur(0.2em);
+}
+       .slider img{
+         
+         width:40vw;
+         margin: 2vh ;
+         border-radius: 36px;
+         box-shadow: 0px 0px 6px 25px skyblue;
+         cursor: pointer;
+         transition: 400ms;
+         justify-items: center;
+         border:8px solid black;
+         
+         transition: 1s;
+         }
+       .slider img:hover{
+         
+         transform: scale(2.3);
+         z-index:2;
+         display: flex;
+        margin:  auto;
+         
+       }
+    .slider{
+      display: flex:
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+    
+     
+      
+    }
+  
+       .photo9{
+         height: 16vh;
+       }
+      .photo10{
+         height: 16vh;
+       }
+      .photo11{
+         height: 16vh;
+       }
+      .photo12{
+         height: 16vh;
+       }
+       .photo13{
+         height: 16vh;
+       }
+        footer h5{
+          color: white;
+          font-size: 63px;
+          text-align: center;
+          text-shadow: black   9px -5px 10px;
+          padding-top: 20px;
+        }
+        footer h5:hover{
+          color:black;
+)
+        }
+       footer{
+         background-color: grey;
+         margin-top: 73px
+         justify-items:center;
+       }
+       .contact a{
+         font-size: 89px;
+         align-items: center;
+         text-align: center;
+         justify-items: center;
+         margin-left: 85px;
+         text-decoration:none;
+         padding-top: 23px
+         
+       }
+         
+       #linkdin{
+       background-color: ;
+        color: darkblue;
+        
+       }
+      #whatsapp{
+        color:green
+      }
+      #instagram{
+        color: orangered;
+      
+        
+      }
+      #facebook{
+        color:blue
+      }   
+      #github{
+        color: black;
+      }
+      .input{
+       text-align: center;
+      
+      }
+      .input input{
+     margin-top: 23px;
+        font-size: 40px;
+        border-radius: 20px;
+        padding-left: 17px;
+        font-family: cursive;
+        border: 2px solid black;
+        background-color: grey;
+        color: white:
+        
+      }
+      ::placeholder{
+        color: white;
+        
+      }
+      .input textarea{
+       margin-top: 23px;
+        font-size: 35px;
+        border-radius: 20px;
+        padding-left: 18px;
+        font-family: cursive;
+        background-color: grey;
+        border:2px solid black;
+        color:red;
+        
+      }
+      .input button{
+        
+      }
+      .fa-user{
+        font-size: 33px;
+        display: inline-block;
+        
+      }
+      .fa-phone{
+        font-size: 33px;
+      }
+      .fa-envelope{
+        font-size: 33px;
+        
+      }
+      #send{
+        font-size: 43px;
+        background-color: black;
+        width: 420px;
+        height: 70px;
+        padding-top: 2px
+        
+        
+        margin-bottom:53px;
+        color:red;
+       font-weight:bold;
+      }
+      #send:hover{
+        color:black;
+        text-shadow: silver 10px -3px 8px;
+        background-color: grey;
+      }
+  </style>
+ 
+     
+    
+   
+</head>
+
+<body >
+  <header>
+    <nav class="navbar">
+      
+      <ul>
+    
+      
+       
+        
+       <li><a href="#home">Home</a></li>
+       <li><a href="#academic">About me</a></li>
+      <li> <a href="#resume">Resume</a></li>
+       <li><a href="#certificate">Certificate</a></li>
+       <li><a href="#contact">Contact</a></li>
+    
+      
+    </ul>
+    <img src="/images/logo-design_1016686-508.jpg" alt="">
+    <img id="photo" class="navbar" src="/images/Image-1691.jpg" alt="">
+    </nav>
+  </header>
+  <div id="name">
+    <h1><b>Hii !</b> I'm Aditya Tiwari</h1>
+    <h2>And I'm a Web Developer</h2>
+    
+  </div>
+  
+ <section id="academic">
+   
+ 
+ 
+   <div id="heading" class="navbar">
+     <h4><u>About me</u></h4>
+     <p>I'm Aditya tiwari belongs to unnao.I currently pursuing BCA from GGIT College.My acedemic intrest <b>Web Development.</b>I am currently enrolled in the BACHELOR OF COMPUTER  APPLICATION(BCA) at GREAT GANGES INSTITUTE OF TECHNOLOGY.where, I gaining theoretical knowledge and practical skills in area. I participate online courses and coding competition with the letest trends of technology.</p>
+   </div>
+ </section>
+ <section id="resume">
+   <header id="resume" class="navbar">
+     <h1><u>Resume</u>
+       
+     </h1>
+     <br>
+     <hr>
+     <br><br><br>
+     
+     <h2>Aditya Tiwari</h2>
+     <br><br>
+     
+     <pre>
+   <b>Address:</b>130,koyla Gali
+   pitamber nagar part2, Unnao
+   Uttar Pradesh - 209801
+   <b>Mob. No.:</b>+918081403176
+   <b>Email:</b>tiwariaditya1241@gmail.com
+     </pre>
+    </header>
+  <section id="career" class="navbar">
+    <h2>CAREER OBJECTIVE</h2>
+   
+    
+        
+    </section>
+  <ul>
+    <li> A self-motivated and hardworking with good knowledge in computer.</li>
+    <li>To make contribution in the organization with best of my ability and also to Develop new skills during the interaction to achieve new heights.</li>
+
+  </ul>
+   <section id="acedemic">
+      <h2>ACADEMIC QUALIFICATION</h2>
+   </section>
+  <ul>
+  <li>Pursuing Bachelor  from Great Ganges Institute Of Technology College, CSJM University</li>
+  <li>
+    12th Passed from UP Board (2023)
+  </li>
+  <li>10th Passed from UP Board (2021)
+</li>
+  </ul>
+ </section>
+ <section id="education">
+   <h2>PROFESIONAL QUALIFICATION</h2>
+  </section>
+  <ul>
+    <li>Six months Course in basic computer from IOCS Computer Institute, unnao</li>
+    <li>HTML Course completed from STP Computer Education</li>
+    <li>CSS Course completed from STP Computer Education</li>
+    <li>Basic Python Programming language Course completed from Great Learning Education </li>
+    <li>Communication skills</li>
+   </ul>
+   <section id="education">
+     <h2>WORK EXPERIENCE</h2>
+   </section>
+   <ul>
+     <li>1 month Internship at CodSoft Infotech Company</li>
+     <li>1 month Internship at Code Alpha Company</li>
+   </ul>
+   <section id="education">
+     <h2>PERSONAL INFORMATION</h2>
+   </section>
+   <pre> <b>Father Name:</b>     Mr. Vishwa Prakash
+ <b>Mother Name:</b>     Mrs.Savita
+ <b>Date of birth:</b>   01/01/2005
+ <b>Language:</b>        Hindi & English
+ <b>Gender:</b>          Male
+ <b>Nationality:</b>     Indian
+ <b>Marital status:</b>  Unmarried
+ <b>Hobbies:</b>         Video mixing & Reading
+                  book
+   </pre>
+   <section id="education">
+     <h2>DECLARATION</h2>
+     
+    </section>
+    <ul>
+      <li>I hereby declared that the above information given by me is true to best of my Knowledge.
+</li>
+    </ul>
+    <h6>(Aditya Tiwari)</h6>
+
+    <button ><a href="/images/resume (1).pdf"  download class="container">Download Resume</a>
+    </button><br><br>
+    </section>
+    <hr>
+    <br><br><br>
+    <section id="certificate">
+      
+    
+     <section id="resume" class="navbar">
+       <h1><u>Certificates</u></h1>
+     </section><br><br><br><br><br><br>
+    <div class="slider">
+      <img src="/images/Aditya_Tiwari20240402-74-10rwyde.jpg" class="photo1">
+      <img src="/images/Aditya_Tiwari20240408-72-2nke8o.jpg" class="photo2">
+      <img src="/images/Aditya_Tiwari20240414-73-1tv8mjj.jpg" class="photo3">
+      <img src="/images/Aditya_Tiwari20240426-71-1wvv2kz.jpg" class="photo4">
+      <img src="/images/Aditya_Tiwari20240505-72-oyqzs3.jpg" class="photo5">
+      <img src="/images/Aditya_Tiwari20240527-73-r2xq9d.jpg" class="photo6">
+      <img src="/images/IMG_20240821_123454.jpg" class="photo7">
+      <img src="/images/6141860450.jpg" class="photo8">
+       <img src="/images/IMG_20240628_220651.jpg" class="photo9">
+       <img src="/images/IMG_20240628_220713.jpg" class="photo10">
+       <img src="/images/IMG_20240810_110819.jpg" class="photo11">
+       
+       <img src="/images/IMG_20240810_110834.jpg"  class="photo12" >
+       <img src="/images/IMG_20240821_132436.jpg" class="photo13">
+       <img src="/images/IMG_20240822_215237.jpg" class="photo13">
+       <img src="/images/IMG_20240822_095806.jpg" class="photo13">
+        <img src="/images/17282113865.jpg" class="photo13">
+        <img src="/images/IMG_20240902_214743.jpg" class="photo13">
+      </div>
+      </section>
+      <br><br><br><br>
+      
+        
+     
+       <section id="resume" class="navbar">
+        
+       <h1><u>Contact</u></h1>
+      
+  <footer class="contact">
+     <section id="contact">
+    <h5>Contact us</h5>
+    
+    <a href="https://www.instagram.com/itz__aadi___1241?igsh=aHB2dm1oc3psamFl" id="instagram">
+      <i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100016094676615" id="facebook">
+      
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://wa.me/message/CGEQNNSFHGEZM1" id="whatsapp">
+      
+      <i class="fa-brands fa-square-whatsapp"></i>
+    </a>
+   <a href="https://www.linkedin.com/in/aditya-tiwari-b7040b300" id="linkdin">
+     
+     <i class="fa-brands fa-linkedin"></i>
+     
+   </a>
+   <a href="https://github.com/Aditya-tiwarigithub/Aditya-tiwarigithub.git" id="github">
+     
+     <i class="fa-brands fa-square-github"></i>
+     </a>
+     
+     <div class="input">
+       <form action="submit">
+       <input type="text"  placeholder="Enter name"   <i class="fa-solid fa-user"></i><br>
+       <input type="number" placeholder="Mob No. "   <i class="fa-solid fa-phone"></i><br>
+       <input type="email" placeholder="Email"   <i class="fa-solid fa-envelope"></i><br>
+       <textarea name="area" id="text" cols="30" rows="10" placeholder="Text message"  ></textarea>
+        <button type="submit" id="send"><h4>Send Message</h4></button>
+      </form>
+       
+     </div>
+     
+    <br><br><br>
+    
+    </section>
+  </footer>
+    
+</body>
+
+</html>
